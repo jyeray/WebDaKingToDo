@@ -1,0 +1,20 @@
+{
+  "name": "WebDaKingToDo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Joaquín Yeray Martín de la Nuez <joaquinmnsm@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "knockout": "^3.4.0"
+  }
+}

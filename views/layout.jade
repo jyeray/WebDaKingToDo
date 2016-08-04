@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title= title
+    //- inject:css
+    link(rel="stylesheet", href="/public/stylesheets/style.css")
+    //- endinject
+
+    //- bower:css
+    //- endinject
+
+    //- inject:js
+    //- endinject
+
+    //- bower:js
+    script(src="/bower_components/knockout/dist/knockout.js")
+    //- endinject
+  body
+    block content
