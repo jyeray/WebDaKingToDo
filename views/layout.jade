@@ -9,11 +9,14 @@ html
     //- bower:css
     //- endinject
 
-    //- inject:js
-    //- endinject
+    script(src="/bower_components/jquery/dist/jquery.min.js")
 
     //- bower:js
     script(src="/bower_components/knockout/dist/knockout.js")
+    //- endinject
+
+    //- inject:js
+    script(src="/public/javascripts/viewmodel.js")
     //- endinject
   body
     block content
