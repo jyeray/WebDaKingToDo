@@ -3,5 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
-  p First name:
-      strong( data-bind='text: firstName')
+  table
+    thead
+      tr
+        th Tasks
+    tbody(data-bind="foreach: tasks")
+      tr
+        td(data-bind="text: Content")
+

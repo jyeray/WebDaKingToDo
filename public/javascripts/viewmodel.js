@@ -1,9 +1,10 @@
 $( document ).ready( function() {
-    function AppViewModel() {
-        this.firstName = "Bert";
-        this.lastName = "Bertington";
-    }
+    var viewModel = {
+        tasks : ko.observableArray([])
+    };
+    ko.applyBindings(viewModel);
 
-    // Activates knockout.js
-    ko.applyBindings(new AppViewModel());
+    $.getJSON("http://localhost:52134/tasks", function (data) {
+        viewModel.tasks(data)
+    });
 });
