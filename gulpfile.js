@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var inject = require('gulp-inject');
 
 gulp.task('index', function () {
-    var target = gulp.src('./views/layout.jade');
+    var target = gulp.src('./views/index.html');
     // It's not necessary to read the files (will speed up things), we're only after their paths:
     var sources = gulp.src(['./public/**/*.js', './public/**/*.css'], {read: false});
 
@@ -20,7 +20,7 @@ gulp.task('index-bower', function () {
         .pipe(stylus())
         .pipe(gulp.dest('./views'));
 
-    gulp.src('./views/layout.jade')
+    gulp.src('./views/index.html')
         .pipe(inject(gulp.src(bowerFiles(), {read: false}), {name: 'bower'}))
         .pipe(inject(es.merge(
             cssFiles,
