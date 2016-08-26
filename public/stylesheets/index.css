@@ -1,0 +1,9 @@
+.form-group {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+#todo-table {
+    margin: 0 auto;
+    width: 25%;
+}

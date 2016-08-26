@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <title>DakingToDo</title>
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- inject:css -->
+    <link rel="stylesheet" href="/public/stylesheets/index.css">
     <link rel="stylesheet" href="/public/stylesheets/style.css">
     <!-- endinject -->
 
@@ -19,16 +23,12 @@
     <!-- bower:js -->
     <script src="/bower_components/knockout/dist/knockout.js"></script>
     <!-- endinject -->
-
-
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Tasks</th>
-            </tr>
-        </thead>
+    <div class="form-group">
+        <h1>DaKing To-Do <small>List</small></h1>
+    </div>
+    <table id="todo-table">
         <tbody data-bind="foreach: tasks">
             <tr>
                 <td data-bind="text: Content"></td>
